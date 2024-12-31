@@ -68,6 +68,8 @@ ____
 * Test the model on new images.
 * If fire is detected, trigger an alarm or notification system.
 
+____
+
 ## Result:
 
 ![image](https://github.com/user-attachments/assets/0323c2ab-d60e-4e29-98f4-e1cb60ca1ff4)
