@@ -38,9 +38,10 @@ Data collected from Roboflow, total 4416 images divided into four classes.
 ## CNN ARCHITECTURE 
 * Input Layer:  224x224 RGB images
 * Three Conv Layer along with Maxpooling
-      - Each Block:
-         - 1 Conv2D layer with 'relu' activation.
-         - 1 MaxPooling2D layer.
+  
+  **Each Block:**
+  - 1 Conv2D layer with 'relu' activation.
+  - 1 MaxPooling2D layer.
 * Flatten Layer
   - Two fully connected layer along with dropout
   - output layer with sigmoid activation function
@@ -48,7 +49,7 @@ Data collected from Roboflow, total 4416 images divided into four classes.
  ![image](https://github.com/user-attachments/assets/7ca4112b-2b5b-42eb-8c4e-5495a7412168)
 
 ## MODEL COMPILATION AND TRAINING HYPERPARAMETERS
-![image](https://github.com/user-attachments/assets/b9ed9f37-7172-4089-8683-1ea27ac2adf4)
+![image](https://github.com/user-attachments/assets/0ec3aaed-153f-41bd-beab-47bd27d29b1a)
 
 ## RESULT
 **PLOT TRAINING AND VALIDATION ACCURACY AS WELL AS LOSS**
@@ -66,11 +67,6 @@ Data collected from Roboflow, total 4416 images divided into four classes.
 
 
 ## Result:
-
-![image](https://github.com/user-attachments/assets/0323c2ab-d60e-4e29-98f4-e1cb60ca1ff4)
-
-![image](https://github.com/user-attachments/assets/7debaf06-4351-42a0-9cca-aea605578a93)
-
 ![image](https://github.com/user-attachments/assets/fcbe0d6a-e21e-4268-a127-29f1426946e7)
 
 ![image](https://github.com/user-attachments/assets/1a216d57-8106-46f9-8e96-41ea28a34e0b)
