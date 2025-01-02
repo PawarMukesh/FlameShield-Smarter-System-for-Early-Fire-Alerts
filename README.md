@@ -36,17 +36,8 @@ Data collected from Roboflow, total 4416 images divided into four classes.
 ![image](https://github.com/user-attachments/assets/c94667ed-a280-4253-8dd7-121644d9e061)
 
 ## CNN ARCHITECTURE 
-Input Layer:
-  Size: 224x224 RGB images
-Three Conv Layer along with Maxpooling.
-             Each Block:
-                        ￭  1 Conv2D layer with 'relu' activation.
-                        ￭ 1 MaxPooling2D layer.
-Flatten Layer
-Two fully connected layer along with dropout
-output layer with sigmoid activation function
-1. Model Summary:
-           Total Parameters: 11,177,281.
+![image](https://github.com/user-attachments/assets/9adb70d3-7365-4874-99cf-5267cab41cee)
+
 
 
 
