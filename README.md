@@ -67,9 +67,10 @@ Data collected from Roboflow, total 4416 images divided into four classes.
 
 
 ## Result:
-![image](https://github.com/user-attachments/assets/fcbe0d6a-e21e-4268-a127-29f1426946e7)
+![image](https://github.com/user-attachments/assets/b6ec607d-fb43-495a-a232-3e3f6018ad27)
+![image](https://github.com/user-attachments/assets/334e27cb-095c-4ee7-acf2-c5b270f05b98)
 
-![image](https://github.com/user-attachments/assets/1a216d57-8106-46f9-8e96-41ea28a34e0b)
+
 
 
 ## CONCLUSION
