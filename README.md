@@ -1,52 +1,76 @@
-# FlameShield - Smarter System for Early Fire Alerts
-## Overview:
+# FlameShield-Smarter System for Early Fire Alerts
 Early fire detection is crucial for minimizing damage and saving lives.  Traditional methods like smoke detectors and manual monitoring often suffer from delays and inaccuracies. Deep learning-based approaches offer real-time detection with higher precision, analyzing patterns from images and videos effectively.
-____
+
 ## OBJECTIVE 
+1. Develop advanced fire detection models using deep learning to detect and classify fire in diverse image scenarios.
 
-### STEPS TO DEVELOP THE SYSTEM: 
-**The project follows these detailed steps:**
+2. Enhance model robustness by integrating diverse datasets and applying data augmentation techniques to improve performance across varying environmental conditions.
 
-### 1. Import Necessary Libraries
-* Load essential Python libraries like TensorFlow, NumPy, Matplotlib, and OpenCV.
-* Ensure all dependencies are installed using pip install -r requirements.txt.
-### 2. Data Loading
-* Load the image dataset containing Fire and Not-Fire classes.
+3. Implement a real-time alert system with an intuitive UI for instant fire alerts.
 
-**Split the dataset into training, validation, and test sets for model evaluation.**
-### 3. Get Class Indices
-* fire': 0, 'non_fire': 1
-* Map the class names to numerical indices for model training and evaluation.
-* Use TensorFlow/Keras utilities to generate class indices automatically.
+## PROBLEM STATEMENT  
+Fires cause serious damage to people, property, and the environment. Traditional methods like sensors or manual checks are often slow and unreliable. A smart system using deep learning can help detect fires faster and more accurately, improving safety and response time.
 
-### 4. Separate Labels from Test Set
-* Extract image data and corresponding labels for the test set.
-* Prepare the data for visualization and evaluation.
+## METHODOLOGY
+![image](https://github.com/user-attachments/assets/c4d18658-581d-4a5f-8927-a87e748415b9)
 
-### 5. Visualize Training Images
-![image](https://github.com/user-attachments/assets/dfcce7c3-b72f-4e4f-a1a3-b2c9baf6696b)
+## DATASET OVERVIEW
+Data collected from Roboflow, total 4416 images divided into four classes. 
+* url = { https://universe.roboflow.com/test-ojr0m/fire-detection-gj7u6 }
+* publisher = { Roboflow }
+* year = { 2024 }
+* Roboflow Dataset Samples: 3198
+* Extra Added Samples: 1218
 
-* Display sample images from the training dataset to understand the data distribution.
-* Use libraries like Matplotlib for visualization.
+## DATA PREPROCESSING
+1. Resize Image: 224x224x3
+2. Data Augmentation
+   * rotation range
+   * zoom range
+   * width_shift_range
+   * height_shift_range
+   * horizontal_flip
+   * brightness_range
 
-### 6. Create Sequential Model
-![image](https://github.com/user-attachments/assets/ffc22640-f532-4b09-a59a-b1568ee5ff4e)
+## Visualise Training Images 
+![image](https://github.com/user-attachments/assets/c94667ed-a280-4253-8dd7-121644d9e061)
 
-* Define a CNN-based sequential model with layers for:
-* Convolution and Max Pooling for feature extraction.
-* Dense and Dropout layers for classification and regularization.
+## CNN ARCHITECTURE 
+Input Layer:
+  Size: 224x224 RGB images
+Three Conv Layer along with Maxpooling.
+             Each Block:
+                        ￭  1 Conv2D layer with 'relu' activation.
+                        ￭ 1 MaxPooling2D layer.
+Flatten Layer
+Two fully connected layer along with dropout
+output layer with sigmoid activation function
+1. Model Summary:
+           Total Parameters: 11,177,281.
 
-### 7. Compile and Train Model
-* Compile the model using:
-* Optimizer: Adam
-* Loss Function: Categorical Crossentropy
-* Metrics: Accuracy
 
-### Train the model on the training dataset.
 
-#### 8. Fit Model for Training
-* Use the model.fit() function to train the model over multiple epochs.
-* Monitor training and validation performance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### 9. Plot Training and Validation Accuracy/Loss
 ![image](https://github.com/user-attachments/assets/93236bb3-7923-46b0-9841-2ef6f5ecec74)
