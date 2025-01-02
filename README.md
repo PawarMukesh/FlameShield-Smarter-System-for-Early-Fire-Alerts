@@ -32,84 +32,50 @@ Data collected from Roboflow, total 4416 images divided into four classes.
    * horizontal_flip
    * brightness_range
 
-## Visualise Training Images 
+## VISUALISE TRAINING SAMPLES
 ![image](https://github.com/user-attachments/assets/c94667ed-a280-4253-8dd7-121644d9e061)
 
 ## CNN ARCHITECTURE 
 * Input Layer:  224x224 RGB images
 * Three Conv Layer along with Maxpooling
-      -- Each Block:
-                        ￭ 1 Conv2D layer with 'relu' activation.
-                        ￭ 1 MaxPooling2D layer.
+      - Each Block:
+         - 1 Conv2D layer with 'relu' activation.
+         - 1 MaxPooling2D layer.
 * Flatten Layer
   - Two fully connected layer along with dropout
   - output layer with sigmoid activation function
-    
-1. Model Summary:
-           Total Parameters: 11,177,281.
 
+ ![image](https://github.com/user-attachments/assets/7ca4112b-2b5b-42eb-8c4e-5495a7412168)
 
+## MODEL COMPILATION AND TRAINING HYPERPARAMETERS
+![image](https://github.com/user-attachments/assets/b9ed9f37-7172-4089-8683-1ea27ac2adf4)
 
+## RESULT
+**PLOT TRAINING AND VALIDATION ACCURACY AS WELL AS LOSS**
+![image](https://github.com/user-attachments/assets/0f138924-438b-46d7-b882-b86bd31860be)
 
+**TRAINING AND TESTING ACCURACY**
+![image](https://github.com/user-attachments/assets/8aae7789-4ec6-455d-85d0-e3c4b1ab5056)
 
+**CONFUSION MATRIX**
+![image](https://github.com/user-attachments/assets/0ca1d970-fa2b-4d5a-92fa-b61f138b2e11)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 9. Plot Training and Validation Accuracy/Loss
-![image](https://github.com/user-attachments/assets/93236bb3-7923-46b0-9841-2ef6f5ecec74)
-
-* Visualize the accuracy and loss curves for training and validation sets.
-* Use Matplotlib to identify overfitting or underfitting.
-
-### 10. Model Evaluation
-![image](https://github.com/user-attachments/assets/03f9a16e-d177-48b8-9ed9-11098a5963b9)
-
-* Evaluate the trained model on the test dataset.
-* Generate metrics like accuracy, precision, recall, and confusion matrix.
-
-### 11. Load Model for Predictions
-* Save the trained model using model.save().
-* Load the saved model for making predictions on unseen data.
-
-### 12. Test the Model on Images
-* Test the model on new images.
+## MODEL TESTING 
+* Test the model on random unseen images.
 * If fire is detected, trigger an alarm or notification system.
 
-____
 
 ## Result:
 
 ![image](https://github.com/user-attachments/assets/0323c2ab-d60e-4e29-98f4-e1cb60ca1ff4)
 
-
 ![image](https://github.com/user-attachments/assets/7debaf06-4351-42a0-9cca-aea605578a93)
 
-
 ![image](https://github.com/user-attachments/assets/fcbe0d6a-e21e-4268-a127-29f1426946e7)
-
 
 ![image](https://github.com/user-attachments/assets/1a216d57-8106-46f9-8e96-41ea28a34e0b)
 
 
+## CONCLUSION
+Using a CNN for the Early Fire Detection System leverages its strength in analyzing images to quickly and accurately identify signs of fire, such as smoke and flames. This enables real-time alerts, enhancing safety and response efforts. Proper training and optimization ensure the model is reliable and effective in various environments.
 
